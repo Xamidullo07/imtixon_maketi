@@ -1,0 +1,43 @@
+.about_section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__item {
+        text-align: center;
+        margin-bottom: 48px;
+
+        &:hover {
+            transition: 0.4s;
+            transform: scale(1.02);
+        }
+    }
+
+    &_item__title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 139%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #36536b;
+        margin-top: 33px;
+        margin-bottom: 16px;
+    }
+
+    &_item__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #6c8294;
+    }
+
+    @media screen and (min-width:768px) {
+        &__list {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
